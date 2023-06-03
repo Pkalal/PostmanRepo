@@ -17,6 +17,12 @@
 							"    pm.response.to.have.status(200);\r",
 							"});\r",
 							"\r",
+							"pm.test(\"Your test name\", function () {\r",
+							"    var jsonData = pm.response.json();\r",
+							"    pm.expect(jsonData.loginType).to.eql(\"1\");\r",
+							"    pm.expect(jsonData.varient).to.eql(\"1\");\r",
+							"});\r",
+							"\r",
 							""
 						],
 						"type": "text/javascript"
